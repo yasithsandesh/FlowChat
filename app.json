@@ -1,0 +1,48 @@
+{
+  "expo": {
+    "name": "FlowChat",
+    "slug": "FlowChat",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "scheme": "FlowChat",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.FlowChat",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app needs access to your camera to take photos.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to select pictures."
+      }
+    },
+   
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": ["expo-router", [
+      "expo-image-picker",
+      {
+        "photosPermission": "The app accesses your photos to let you share them with your friends."
+      }
+    ],
+    [
+      "expo-contacts",
+      {
+        "contactsPermission": "Allow $(PRODUCT_NAME) to access your contacts."
+      }
+    ]
+  
+  ]
+  }
+}
